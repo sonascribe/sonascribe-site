@@ -1,12 +1,12 @@
-# SonaMemo Site
+# SonaScribe Site
 
-Official website, privacy policy, support, and beta information for SonaMemo.
+Official website, privacy policy, support, and beta information for SonaScribe.
 
-- Website: https://sonamemo.github.io/sonamemo-site/
-- English website: https://sonamemo.github.io/sonamemo-site/en/
-- Privacy: https://sonamemo.github.io/sonamemo-site/privacy/
-- English privacy: https://sonamemo.github.io/sonamemo-site/en/privacy/
-- Support: https://sonamemo.github.io/sonamemo-site/support/
-- English support: https://sonamemo.github.io/sonamemo-site/en/support/
+- Website: https://sonascribe.github.io/sonascribe-site/
+- English website: https://sonascribe.github.io/sonascribe-site/en/
+- Privacy: https://sonascribe.github.io/sonascribe-site/privacy/
+- English privacy: https://sonascribe.github.io/sonascribe-site/en/privacy/
+- Support: https://sonascribe.github.io/sonascribe-site/support/
+- English support: https://sonascribe.github.io/sonascribe-site/en/support/
 
 This is a static site with no analytics, cookies, or build step.

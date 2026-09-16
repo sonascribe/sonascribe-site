@@ -13,7 +13,7 @@ languageLink?.addEventListener('click',async event=>{
     document.documentElement.lang=nextDocument.documentElement.lang;document.title=nextDocument.title;
     document.head.querySelector('meta[name="description"]')?.setAttribute('content',nextDocument.head.querySelector('meta[name="description"]')?.content||'');
     document.body.replaceWith(nextDocument.body);history.pushState({},'',targetHref);
-    localStorage.setItem('sonamemo-language',document.documentElement.lang.startsWith('en')?'en':'zh');
+    localStorage.setItem('sonascribe-language',document.documentElement.lang.startsWith('en')?'en':'zh');
     const script=document.createElement('script');script.src=nextScript;document.body.append(script);scrollTo(0,0);
   }catch(error){location.href=targetHref;}
 });
