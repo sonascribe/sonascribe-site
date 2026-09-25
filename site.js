@@ -1,7 +1,16 @@
 const nav=document.querySelector('.nav');
-const syncNav=()=>nav?.classList.toggle('nav--scrolled',window.scrollY>8);
-addEventListener('scroll',syncNav,{passive:true});syncNav();
+let navFrame=0;
+const syncNav=()=>{navFrame=0;nav?.classList.toggle('nav--scrolled',window.scrollY>8)};
+addEventListener('scroll',()=>{if(!navFrame)navFrame=requestAnimationFrame(syncNav)},{passive:true});syncNav();
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+document.querySelectorAll('[data-preview-tab]').forEach(tab=>tab.addEventListener('click',()=>{
+  const name=tab.dataset.previewTab;
+  document.querySelectorAll('[data-preview-tab]').forEach(item=>item.setAttribute('aria-selected',String(item===tab)));
+  document.querySelectorAll('[data-preview-panel]').forEach(panel=>{
+    const active=panel.dataset.previewPanel===name;
+    panel.hidden=!active;panel.classList.toggle('is-active',active);
+  });
+}));
 const languageLink=document.querySelector('[data-language-switch]');
 languageLink?.addEventListener('click',async event=>{
   if(!('fetch' in window)||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
