@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="referrer" content="no-referrer">
+    <title>iOS App Review Demonstration | SonaScribe</title>
+    <meta name="description" content="Physical-device demonstrations for the SonaScribe iOS App Review team.">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+      .skip-link { position: fixed; z-index: 100; top: .75rem; left: .75rem; transform: translateY(-180%); padding: .65rem 1rem; border-radius: 8px; background: var(--text); color: var(--surface); }
+      .skip-link:focus { transform: none; }
+      .privacy-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+      .review-main { padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(5rem, 9vw, 7rem); }
+      .review-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, 25rem); gap: clamp(2.5rem, 7vw, 6rem); align-items: end; }
+      .review-intro h1 { max-width: 12ch; margin: 0; font-size: clamp(2.55rem, 6vw, 4.8rem); }
+      .review-lead { max-width: 42rem; margin: 1.4rem 0 0; color: var(--text-secondary); font-size: clamp(1rem, 1.8vw, 1.16rem); }
+      .build-sheet { margin: 0; border-top: 1px solid var(--border-strong, var(--border)); }
+      .build-sheet div { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: .72rem 0; border-bottom: 1px solid var(--border); }
+      .build-sheet dt { color: var(--text-muted, var(--text-tertiary)); font-size: .78rem; font-weight: 700; letter-spacing: .035em; text-transform: uppercase; }
+      .build-sheet dd { margin: 0; font: 600 .9rem/1.5 Manrope, "Noto Sans SC", sans-serif; }
+      .review-list { display: grid; gap: clamp(3rem, 7vw, 5.5rem); margin-top: clamp(4rem, 8vw, 6rem); }
+      .review-item { display: grid; grid-template-columns: minmax(15rem, 22rem) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; padding-top: 2rem; border-top: 1px solid var(--border-strong, var(--border)); }
+      .review-index { margin: 0 0 .75rem; color: var(--accent-dark, var(--accent)); font: 700 .76rem/1.4 Manrope, sans-serif; letter-spacing: .08em; }
+      .review-copy h2 { margin: 0 0 .9rem; font-size: clamp(1.65rem, 3vw, 2.35rem); }
+      .review-copy p { margin: 0; color: var(--text-secondary); }
+      .review-steps { margin: 1.35rem 0 0; padding: 0; list-style: none; }
+      .review-steps li { display: flex; gap: .65rem; padding: .35rem 0; color: var(--text-secondary); }
+      .review-steps li::before { content: "✓"; color: var(--accent-dark, var(--accent)); font-weight: 700; }
+      .video-shell { overflow: hidden; border: 1px solid var(--border-strong, var(--border)); border-radius: 20px; background: var(--surface-dark, #18212b); box-shadow: 0 18px 44px rgba(var(--shadow-rgb, var(--accent-rgb)), .1); }
+      .video-shell video { display: block; width: 100%; max-height: 72vh; background: #0d1218; object-fit: contain; }
+      .video-meta { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 58px; padding: .75rem 1rem; background: var(--surface); }
+      .video-meta span { color: var(--text-muted, var(--text-tertiary)); font-size: .78rem; }
+      .download-link { display: inline-flex; align-items: center; min-height: 40px; font-size: .86rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+      .review-note { margin-top: clamp(3rem, 6vw, 4.5rem); padding: 1.2rem 1.35rem; border-left: 3px solid var(--accent); background: var(--surface); color: var(--text-secondary); }
+      @media (max-width: 820px) {
+        .review-intro, .review-item { grid-template-columns: 1fr; }
+        .review-intro { align-items: start; }
+        .build-sheet { max-width: 32rem; }
+      }
+      @media (max-width: 480px) {
+        .review-main { padding-top: 2.5rem; }
+        .build-sheet div { grid-template-columns: 7.5rem 1fr; }
+        .video-meta { align-items: flex-start; flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#review-content">Skip to demonstrations</a>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="../../en/">
+          <img class="brand-icon" src="../../assets/app-icon.png" alt="">
+          SonaScribe
+        </a>
+        <nav class="nav-links" aria-label="Review page navigation">
+          <a href="../../en/support/">Support</a>
+          <a href="../../en/privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="review-content" class="review-main">
+      <div class="container">
+        <section class="review-intro" aria-labelledby="review-title">
+          <div>
+            <p class="eyebrow"><span class="privacy-dot" aria-hidden="true"></span>APP REVIEW · iOS 1.0</p>
+            <h1 id="review-title">Physical-device demonstrations</h1>
+            <p class="review-lead">Two short recordings show the complete SonaScribe workflow and the Lifetime Pro purchase experience using the submitted TestFlight build.</p>
+          </div>
+          <dl class="build-sheet" aria-label="Test environment">
+            <div><dt>Device</dt><dd>iPhone 16</dd></div>
+            <div><dt>Operating system</dt><dd>iOS 27.0</dd></div>
+            <div><dt>App version</dt><dd>1.0.0 (build 2)</dd></div>
+            <div><dt>Source</dt><dd>TestFlight</dd></div>
+          </dl>
+        </section>
+
+        <div class="review-list">
+          <section class="review-item" aria-labelledby="core-title">
+            <div class="review-copy">
+              <p class="review-index">01 · CORE WORKFLOW</p>
+              <h2 id="core-title">From voice to structured notes</h2>
+              <p>A fresh launch through permission, recording, local transcription, and on-device AI notes.</p>
+              <ul class="review-steps">
+                <li>Recording consent and microphone permission</li>
+                <li>English recording and transcription</li>
+                <li>Professional model with General Notes</li>
+                <li>Transcript and AI Notes results</li>
+              </ul>
+            </div>
+            <div class="video-shell">
+              <video controls playsinline preload="metadata" poster="../../assets/app-review/core-workflow-ios27.jpg">
+                <source src="https://models.sonascribe.xyz/app-review/ios-1-0/core-workflow-ios27.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video-meta">
+                <span>1 min 24 sec · HEVC · Physical iPhone</span>
+                <a class="download-link" href="https://models.sonascribe.xyz/app-review/ios-1-0/core-workflow-ios27.mp4">Open MP4 ↓</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="review-item" aria-labelledby="purchase-title">
+            <div class="review-copy">
+              <p class="review-index">02 · LIFETIME PRO</p>
+              <h2 id="purchase-title">One purchase, permanent access</h2>
+              <p>The StoreKit purchase sheet, successful TestFlight sandbox transaction, and permanent Pro entitlement.</p>
+              <ul class="review-steps">
+                <li>Localized Lifetime Pro price</li>
+                <li>One-time purchase with no subscription</li>
+                <li>Apple purchase confirmation</li>
+                <li>Permanent Professional access</li>
+              </ul>
+            </div>
+            <div class="video-shell">
+              <video controls playsinline preload="metadata" poster="../../assets/app-review/lifetime-pro-purchase-ios27.jpg">
+                <source src="https://models.sonascribe.xyz/app-review/ios-1-0/lifetime-pro-purchase-ios27.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video-meta">
+                <span>59 sec · HEVC · TestFlight sandbox</span>
+                <a class="download-link" href="https://models.sonascribe.xyz/app-review/ios-1-0/lifetime-pro-purchase-ios27.mp4">Open MP4 ↓</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <p class="review-note">Both demonstrations were recorded on a physical device. No account, sign-in, or reviewer credentials are required to use SonaScribe.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span data-year></span> SonaScribe</span>
+        <div class="footer-links">
+          <a href="../../en/privacy/">Privacy</a>
+          <a href="../../en/support/">Support</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../../site.js"></script>
+  </body>
+</html>
